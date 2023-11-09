@@ -3,6 +3,8 @@ std_msgs/Header header         # the frame the request and response are
 
 geometry_msgs/Pose[] waypoints # series of points the route should pass through
 bool plan_from_vehicle         # add the vehicle position as the first waypoint
+VehicleOrientation final_orientation        # Final orientation of the vehicle
+string tcp_frame_id            # Which frame to put at the waypoints
 
 ---
 
